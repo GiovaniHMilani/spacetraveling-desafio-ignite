@@ -242,6 +242,9 @@ describe('Post', () => {
       getStaticPropsContext
     )) as GetStaticPropsResult;
 
+    console.log(response.props.post);
+    console.log(expect.objectContaining(postReturn));
+
     expect(response.props.post).toEqual(expect.objectContaining(postReturn));
   });
 
